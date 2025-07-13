@@ -18,4 +18,5 @@ while True:
           set_todos(todos);
       case FreeSimpleGUI.WINDOW_CLOSED:
           break;
-window.close()
+
+window.close();
