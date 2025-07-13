@@ -2,11 +2,7 @@ from modules.functions import get_todos, set_todos
 import time
 
 now = time.strftime("%b %d, %Y %H:%M:%S");
-print("It is", now)
-<<<<<<< HEAD
-print("dsds")
-=======
->>>>>>> e9a7905361a86e9fd5564c3f48b72197f94d524c
+
 
 while True:
     user_action = input("Type add, show, exit, edit, complete: ")
