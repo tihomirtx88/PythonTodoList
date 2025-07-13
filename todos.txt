@@ -6,3 +6,6 @@ master add
 Clean the kitchen
 Clean the table
 masteclas fass
+master python
+master python
+master python
