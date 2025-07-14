@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0788add9-3529-46fd-9ab4-0d4ee73610e6" name="Changes" comment="Adding add todos functionality">
-      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoList.py" beforeDir="false" afterPath="$PROJECT_DIR$/todoList.py" afterDir="false" />
-    </list>
+    <list default="true" id="0788add9-3529-46fd-9ab4-0d4ee73610e6" name="Changes" comment="Adding add todos functionality" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

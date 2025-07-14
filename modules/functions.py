@@ -1,6 +1,6 @@
 def get_todos():
     """Read a text file and return to list of todo items"""
-    with open('../todos.txt', 'r') as file_local:
+    with open('todos.txt', 'r') as file_local:
         todos_local = file_local.readlines()
 
     return todos_local;
