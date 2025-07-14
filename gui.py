@@ -6,8 +6,8 @@ FreeSimpleGUI.theme("Black")
 
 clock = FreeSimpleGUI.Text("", key="clock");
 label = FreeSimpleGUI.Text("Typ in a todo");
-input_box = FreeSimpleGUI.InputText(tooltip="Add to do", key="todo");
-add_button = FreeSimpleGUI.Button("Add");
+input_box = FreeSimpleGUI.InputText(tooltip="Enter todo", key="todo");
+add_button = FreeSimpleGUI.Button(size=2, image_source="add.png", mouseover_colors="LightBlue2", tooltip="Add todo", key="Add");
 list_b0x = FreeSimpleGUI.Listbox(values=get_todos(),
                                  key="todos",
                                  enable_events=True,
