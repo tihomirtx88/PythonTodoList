@@ -1,16 +1,16 @@
-import FreeSimpleGUI as sg
+import FreeSimpleGUI
 from converters import convert
 
-feet_label = sg.Text("Enter feet: ")
-feet_input = sg.Input(key="feet")
+feet_label = FreeSimpleGUI.Text("Enter feet: ")
+feet_input = FreeSimpleGUI.Input(key="feet")
 
-inches_label = sg.Text("Enter inches: ")
-inches_input = sg.Input(key="inches")
+inches_label = FreeSimpleGUI.Text("Enter inches: ")
+inches_input = FreeSimpleGUI.Input(key="inches")
 
-button = sg.Button("Convert")
-output_label = sg.Text("", key="output")
+button = FreeSimpleGUI.Button("Convert")
+output_label = FreeSimpleGUI.Text("", key="output")
 
-window = sg.Window("Convertor",
+window = FreeSimpleGUI.Window("Convertor",
                    layout=[[feet_label, feet_input],
                            [inches_label, inches_input],
                            [button, output_label]])

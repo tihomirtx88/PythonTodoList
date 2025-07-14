@@ -10,8 +10,15 @@ list_b0x = FreeSimpleGUI.Listbox(values=get_todos(),
                                  size=[45,10]);
 edit_button = FreeSimpleGUI.Button("Edit");
 
+complete_button = FreeSimpleGUI.Button("Complete");
+
+exit_button = FreeSimpleGUI.Button("Exit");
+
 window = FreeSimpleGUI.Window("My frist todo app",
-                              layout=[[label], [input_box, add_button], [list_b0x, edit_button]],
+                              layout=[[label],
+                                      [input_box, add_button],
+                                      [list_b0x, edit_button, complete_button],
+                                      [exit_button]],
                               font=('Helvetica', 20));
 while True:
   event, values = window.read()
@@ -21,6 +28,7 @@ while True:
           new_todos = values['todo'] + "\n"
           todos.append(new_todos);
           set_todos(todos);
+          window['todos'].update(values=todos)
       case "Edit":
           todo_to_edit = values['todos'][0]
           new_todo = values['todo']
@@ -31,9 +39,19 @@ while True:
           set_todos(todos)
           # Reorder on real time
           window['todos'].update(values=todos)
+      case "Complete":
+          # Complete logic implementation
+          todo_to_completed = values["todos"][0];
+          todos = get_todos();
+          todos.remove(todo_to_completed);
+          set_todos(todos);
+          window['todos'].update(values=todos);
+          window['todo'].update(value="");
       case "todos":
           # Press current value in input box
           window['todo'].update(value=values['todos'][0])
+      case "Exit":
+          break;
       case FreeSimpleGUI.WINDOW_CLOSED:
           break;
 
