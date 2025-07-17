@@ -2,6 +2,11 @@ from modules.functions import get_todos, set_todos
 import FreeSimpleGUI
 import time
 from zip_extractor import extract_archive
+import os
+
+if not os.path.exists("todos.txt"):
+    with open("todos.txt", 'w') as file:
+        pass
 
 FreeSimpleGUI.theme("Black")
 
