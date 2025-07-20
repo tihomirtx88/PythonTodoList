@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit import session_state
+from PIL import Image
 
 from modules.functions import get_todos, set_todos
 
